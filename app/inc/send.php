@@ -12,7 +12,7 @@ $text=$_POST['text'];
 $name=$_POST['name'];
 $phone=$_POST['phone'];
 $email=$_POST['email'];
-$subject=$_POST['subject'];
+$company=$_POST['company'];
 $web=$_POST['web'];
 $domain=$_SERVER['HTTP_HOST'];
 $ipadress=$_SERVER['REMOTE_ADDR'];
@@ -30,7 +30,7 @@ $mail->From     = "contact@cyaninstrument.com"; // it must be a match with SMTP 
 $mail->FromName = "Cyan Instrument"; // from name
 $mail->AddAddress("xirwanx@gmail.com","Cyan Instrument"); // SMTP username , Name Surname
 $mail->Subject  =  $_POST['subject'];
-$content = "<h2>You have a message from $domain contact form.</h2>  <p><b>Name:</b> $name</p> <p><b>E-Mail:</b> $email</p> <p><b>Phone:</b> $phone</p> <p><b>Subject:</b> $subject</p> <p><b>Website: $web</b> </p> <p><b>Message:</b> $text</p>";
+$content = "<h2>You have a message from $domain contact form.</h2>  <p><b>Name:</b> $name</p> <p><b>E-Mail:</b> $email</p> <p><b>Phone:</b> $phone</p> <p><b>Company:</b> $company</p> <p><b>Website: $web</b> </p> <p><b>Message:</b> $text</p>";
 $mail->MsgHTML($content);
 if(!$mail->Send())
 {
