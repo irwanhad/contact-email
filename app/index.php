@@ -63,6 +63,22 @@ session_start();
                     </div>
                   </div>
                 </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Subject *</label>
+                        <input type="text" name="subject" id="subject" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>Message *</label>
+                      <textarea class="form-control" name="message" id="message" rows="7" required="required"></textarea>
+                    </div>
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col-sm-2">
                     <div class="form-group">
@@ -78,21 +94,12 @@ session_start();
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-12">
-                    <div class="form-group">
-                      <label>Message *</label>
-                      <textarea class="form-control" name="message" id="message" rows="7" required="required"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
                       <button type="submit" name="submit" class="btn btn-primary btn-lg btn-send">Send Message!</button>
                     </div>
                   </div>
                 </div>
-
               </form>
             </div>
           </div>
