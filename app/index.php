@@ -96,7 +96,7 @@ session_start();
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <button type="submit" name="submit" class="btn btn-primary btn-lg btn-send">Send Message!</button>
+                      <button type="submit" onclick="sendmessage()" class="btn btn-primary btn-lg btn-send">Send Message!</button>
                     </div>
                   </div>
                 </div>
