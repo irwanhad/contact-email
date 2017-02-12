@@ -109,7 +109,7 @@ session_start();
 			<label for="phone">Phone<font color="red">*</font></label>
 		</p>
 		<p class="company">
-			<input type="text" name="web" id="company" placeholder="Your company name" />
+			<input type="text" name="company" id="company" placeholder="Your company name" />
 			<label for="web">Company</label>
 		</p>
 		<p class="sec">
